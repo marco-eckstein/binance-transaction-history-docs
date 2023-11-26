@@ -54,6 +54,8 @@ Incomplete list of possible values:
 
 If you enable the export option *Hide transfer record*, *transfer_in* and *transfer_out* tranactions will be hidden, but not *Transfer Between Main Account/Futures and Margin Account* transactions.
 
+It seems that in November 2023, new operation types have been added. At least for my data - for the same time interval - new operation types appeared after Binance had informed me about bug fixes.
+
 Incomplete list of possible values:
 
 - Airdrop Assets
