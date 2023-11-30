@@ -19,7 +19,7 @@ Theoretically, it should be easy to calculate the balance of any combination of 
 
 Until recently, one of the cuplrits for this where incorrect transfer transaction. A coin could have a *transfer_out* transaction without any matching *transfer_in* transaction, suggesting the coin had been withdrawn from Binance, even though this was not the case. As of late November 2023, Binance seems to have fixed this issue, replacing the single *transfer_in* transaction with a pair of *Transfer Between Main Account/Futures and Margin Account* transactions.
 
-As of late November 2023, I am currently in contact with Binance to work on the remaining inconsistencies.
+As of late November 2023, I am currently in contact with Binance to work on the remaining inconsistencies. So far, it seems that various loan transactions are completely messed up.
 
 ### Fees for fiat purchases are missing
 
