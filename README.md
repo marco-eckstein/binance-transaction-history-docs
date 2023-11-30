@@ -39,6 +39,14 @@ The transactions do not have IDs. Thus, a CSV file can contain multiple transact
 
 Both CSV and API provide transaction timestamps. However, these can be different types of timestamps at least in some cases. According to the Binance support, in the API it is sometimes the timestamp of calculation, while in the CSV it is the timestamp of credit to the account.
 
+### Transactions can appear in the wrong order
+
+Logically, the time when you loan an asset should be before or the same as the time when you sell the borrowed asset. However, this is not necessarily the case. According to a Binance engineer in late November 2023:
+
+> The 1s delay you see there its actually due to database write delay, the mechanism of the trade and loan is executed near instantaneous but the actual writing on the operation logs might have slight delay. the actual delay is actually less than 1s from our checks but we dont support the display of ms to users in file export. I've raised an improvement feedback to potentially work on ms support for export of transactions
+
+Thus, a balance that becomes negative intermittently is to be expected.
+
 ## Columns
 
 ### Account
